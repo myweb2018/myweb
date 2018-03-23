@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>无努力不青春css优先级（控制得越精细优先级越高）</title>
+	<style>
+	p{
+		color: grey;
+	}
+	.text2{
+		color: yellow;
+	}
+	#text1{
+		color:blue;
+	}
+	div .text2{
+		color:black;
+	}
+	div #text1{
+		color:purple;
+	}
+    </style>
+</head>
+<body>
+	<div>
+		<p id="text1" class="text2">
+			无努力<br>
+			不青春
+		</p>
+	</div>
+</body>
+</html>
